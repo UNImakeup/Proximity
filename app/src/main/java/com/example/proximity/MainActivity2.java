@@ -54,6 +54,11 @@ public class MainActivity2 extends AppCompatActivity {
                  }
                 System.out.println(reps);
                  textview.setText(String.valueOf(reps - 1)); //-1, fordi den starter på 1 af en eller anden grund.
+
+                if (reps==10){
+                    Intent situp = new Intent(MainActivity2.this, MainActivity3.class);
+                    startActivity(situp);
+                }
             }
 
             @Override
